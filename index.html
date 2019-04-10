@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Salte CI</title>
+    <meta name="description" content="The simplest and most versatile build platform in existence.">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/salte-ci/logos/master/images/logo/filled.png"/>
+    
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Source Code Pro', monospace;
+        background: #fafafa;
+        color: #1B1D23;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+        padding-top: 10%;
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      .logo {
+        max-width: 100%;
+      }
+
+      p {
+        margin: 10px 0;
+      }
+
+      #signup {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .email {
+        border: none;
+        box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.5);
+        padding: 10px 20px;
+        font-size: 20px;
+        outline: none;
+        margin: 10px;
+      }
+
+      .submit {
+        position: relative;
+        -webkit-appearance: none;
+        border: none;
+        box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.5);
+        padding: 10px 20px;
+        font-size: 20px;
+        outline: none;
+        margin: 10px;
+        cursor: pointer;  
+
+        color: #fafafa;
+        background: #1B1D23;
+        transition: 0.15s ease-in-out;
+        transition-property: background-color, color;
+      }
+
+      .submit:hover {
+        color: #1B1D23;
+        background: #fafafa;
+      }
+
+      h1, h2 {
+        font-weight: lighter;
+      }
+
+      .signup-tagline {
+        margin: 10px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>  
+  <body>
+    <img class="logo" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE4MCAxODAiPgogIDxkZWZzPgogICAgPHBhdGggaWQ9InRyYW5zcGFyZW50LWEiIGQ9Ik03OC44NzAyMzU0LDE3OS4zMTg2MDYgQzc0LjI4OTcyNDQsMTc4Ljc1MzY3OSA2OS44MTU3ODg3LDE3Ny44NDQ1OSA2NS40NzUwOTY5LDE3Ni42MTgwMDYgQzY3LjYwOTg3ODcsMTY4LjkxMzAzOSA3MS4zMDU3MDY5LDE2Mi42NDk2MzggNzYuNTYyNTgxNCwxNTcuODI3ODA0IEM3Ny4zODQwODQ0LDE1OS44MjE3MTYgNzguMDM4ODYyOCwxNjEuNzU4MzYxIDc4LjUyNjkxNjYsMTYzLjYzNzczNyBDNzkuNTc4NDAxOCwxNjcuNjg2NzUgNzkuOTYwMTEzNCwxNzIuMDg5NjggNzkuNjcyMDUxNSwxNzYuODQ2NTI2IEM3OS40MDk2NCwxNzcuNjQ1MTkzIDc5LjE0MjM2OCwxNzguNDY5MjE5IDc4Ljg3MDIzNTQsMTc5LjMxODYwNiBaIi8+CiAgICA8cGF0aCBpZD0idHJhbnNwYXJlbnQtYiIgZD0iTTUzLjgxOTMyNjIsMTcyLjQzMjAzNyBDNDkuNzg0NDQ3NSwxNzAuNjU4NTIgNDUuOTA0NTUzOCwxNjguNTk3NDQ0IDQyLjIwNTU4OTgsMTY2LjI3NDc1MyBDNDIuOTI0NjQ2MywxNTkuOTkyMzk2IDQyLjcxNjM2NDgsMTU1LjQ3MzcyNyA0MS41ODA3NDUyLDE1Mi43MTg3NDQgQzQyLjcwMzc2NzEsMTUyLjA2NDk2NSA0My45MzY4OTQxLDE1MS41MTAzOTEgNDUuMjg2ODMwNywxNTEuMDcxNDYxIEM1NS42MDIxMDc3LDE1MS45MzYwODkgNjQuMzAxMzcsMTUwLjg3NTgzOCA3MS4zODQ2MTc2LDE0Ny44OTA3MDYgQzcxLjYzNTQ1MTcsMTQ4LjI5NDYxMiA3MS44ODA1NDA4LDE0OC42OTY1NDUgNzIuMTE5ODg0OSwxNDkuMDk2NTA0IEM2Mi4wMTc4MDg4LDE1NS43MTM5ODYgNTUuOTE3NjI1OSwxNjMuNDkyNDk1IDUzLjgxOTMyNjIsMTcyLjQzMjAzNyBaIi8+CiAgPC9kZWZzPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICA8cGF0aCBmaWxsPSIjMUIxRDIzIiBkPSJNNTMuODE5MzI2MiwxNzIuNDMyMDM3IEM1NS45MTc2MjU5LDE2My40OTI0OTUgNjIuMDE3ODA4OCwxNTUuNzEzOTg2IDcyLjExOTg4NDksMTQ5LjA5NjUwNCBDNzMuOTI5MDE5NiwxNTIuMTE5NjgzIDc1LjQwOTkxODUsMTU1LjAzMDExNiA3Ni41NjI1ODE0LDE1Ny44Mjc4MDQgQzcxLjMwNTcwNjksMTYyLjY0OTYzOCA2Ny42MDk4Nzg3LDE2OC45MTMwMzkgNjUuNDc1MDk2OSwxNzYuNjE4MDA2IEM2MS40NjkzODE2LDE3NS40ODYwNzkgNTcuNTc3MTM4NSwxNzQuMDgzNzY5IDUzLjgxOTMyNjIsMTcyLjQzMjAzNyBMNTMuODE5MzI2MiwxNzIuNDMyMDM3IFogTTQyLjIwNTU4OTgsMTY2LjI3NDc1MyBDMzkuNDc2MTk0LDE2NC41NjA4ODIgMzYuODQ1MzA4NywxNjIuNzA0NTcxIDM0LjMyMzM1NzIsMTYwLjcxNjI0MSBDMzUuODkxOTY1MSwxNTcuNDY0NDcgMzguMjUyOTQ1MSwxNTQuNjU2MDU2IDQxLjU4MDc0NTIsMTUyLjcxODc0NCBDNDIuNzE2MzY0OCwxNTUuNDczNzI3IDQyLjkyNDY0NjMsMTU5Ljk5MjM5NiA0Mi4yMDU1ODk4LDE2Ni4yNzQ3NTMgTDQyLjIwNTU4OTgsMTY2LjI3NDc1MyBaIE03OC44NzAyMzU0LDE3OS4zMTg2MDYgQzc5LjE0MjM2OCwxNzguNDY5MjE5IDc5LjQwOTY0LDE3Ny42NDUxOTMgNzkuNjcyMDUxNSwxNzYuODQ2NTI2IEM3OS42MjEzOSwxNzcuNjgzMTEzIDc5LjU1MDAxMjIsMTc4LjUzMDY0NyA3OS40NTc5MTgxLDE3OS4zODkxMjggQzc5LjI2MTgzMDcsMTc5LjM2NjI1MSA3OS4wNjU5MzU4LDE3OS4zNDI3NDMgNzguODcwMjM1NCwxNzkuMzE4NjA2IEw3OC44NzAyMzU0LDE3OS4zMTg2MDYgWiBNMTMuNzA3MjI5MywxMzcuNzY1NzA0IEM1LjAyMjAyODI2LDEyMy45MjI2NjQgMCwxMDcuNTQ3ODExIDAsOTAgQzAsNDAuMjk0MzcyNSA0MC4yOTQzNzI1LDAgOTAsMCBDMTM5LjcwNTYyNywwIDE4MCw0MC4yOTQzNzI1IDE4MCw5MCBDMTgwLDEzNy42MzI2MzUgMTQyLjk5NjUyNywxNzYuNjIyNjQ1IDk2LjE2NzYzMDIsMTc5Ljc5MTk4MyBDOTMuOTIyNTI2NSwxNzAuNTk2OTUzIDkzLjM4NDM3MTUsMTY0LjI5NTU3MiA5NC41NTMxNjUyLDE2MC44ODc4MzkgQzk3Ljk4NzYyMTcsMTYwLjg4NzgzOSAxMDkuNTE4Njc2LDE1MC40MDM2NyAxMDkuNTE4Njc2LDEzOC4zNzM5NTkgQzEwOS41MTg2NzYsMTI2LjM0NDI0OCAxMTIuNzU1MDQzLDExMC4zOTYxMDcgMTI0LjA0MTg0MiwxMTAuNjE2OTQyIEMxMzUuMzI4NjQyLDExMC44Mzc3NzcgMTM3LjI2NTE0LDExOC4xNDY5MDkgMTM4LjM0NjY3OCwxMTIuMDgyOTggQzEzMC45MzIwNzEsMTA0Ljg2MTcwMiAxMjkuODQyMjk5LDk3LjM4NDUzMDkgMTM1LjA3NzM2MSw4OS42NTE0NjUgQzE1Ny4xNDU1NzgsODguOTMzMDU5NCAxNjguMTc5Njg3LDgwLjA5OTQzMDggMTY4LjE3OTY4Nyw2My4xNTA1NzkyIEMxNjguMTc5Njg3LDQ5LjAzNzg0MDcgMTYxLjYwNjY3NSw0MS41MTQyMjQ5IDE1NS4yODQ3NzcsMzYuOTkzMzM2IEMxNDcuODU4MjcxLDMxLjY4MjUyMzQgMTQxLjQ1OTA4OSwzMS4yMDAwNTE3IDEzNi4wODcyMzMsMzUuNTQ1OTIwOSBDMTM3LjEzMTI1NCwzMi44NTU1MTM5IDEzOS45MTIxNDIsMzEuMTA5Njg2OCAxNDQuNDI5ODk4LDMwLjMwODQzOTYgQzE0MS42NjI1MzYsMjYuNjg0OTQ1NCAxMzYuNzMwMDgxLDI0Ljc5NDU0OTkgMTMxLjQwODg0NSwyNy41OTk2NzE3IEMxMjYuMDg3NjEsMzAuNDA0NzkzNiAxMjcuMDM4MTQyLDQyLjI5NzY5NjkgMTM2LjczMDA4MSw0Mi4yOTc2OTY5IEMxNDYuNDIyMDIsNDIuMjk3Njk2OSAxNDguMTgxNDg0LDQ3LjI5NDM0MjkgMTQ5LjQ2ODU4Nyw1MC40MTIwNzI4IEMxNTAuNzU1NjksNTMuNTI5ODAyNyAxNDguMTgxNDg0LDYzLjE1MDU3OTIgMTM2LjczMDA4MSw2My4xNTA1NzkyIEMxMjUuMjc4Njc3LDYzLjE1MDU3OTIgMTI4LjQxMzQ3Miw1NC41MjAyNzI5IDEwOC41NTU0MTcsNTQuNTIwMjcyOSBDOTkuNDQ4ODI5LDU0LjUyMDI3MjkgODQuMDkxNDYxNCw2My4xNTA1NzkyIDg0LjA5MTQ2MTQsNzMuNDk0OTM2MSBDODQuMDkxNDYxNCw4MC41MzQzMDY5IDg2Ljg4ODI4OTksODQuMDY0MDIwNiA5NC41NTMxNjUyLDg1LjA2NzcyMDkgQzEwMi4yMTgwNDEsODYuMDcxNDIxMiAxMDUuMzQ3NDgsODkuOTc3NTg0NiAxMDQuMTIxMzUxLDkzLjI0OTIxODQgQzk5LjA5MTQwMzIsMTA2LjY3MDQzNCA4Mi44NTczNTgsOTQuMDAzMzkyOCA4MS4zMDA0MjYxLDEwNC40NjQ2NjcgQzc1Ljc5MzI3MzUsOTMuOTA1NzcyNCA3OS45MzE5MjA3LDc3LjU3NDE2MzEgNzkuNTEwMDk3Myw3OS42ODY0OTI5IEMyNy4zNDc5NDM2LDc2Ljc4NjQxODIgMTQuOTEwOTY1OSwxMTAuNjE2OTQyIDEzLjAyNTg3NzUsMTE5LjAxNDgzOSBDMTEuNzY5MTUxOSwxMjQuNjEzNDM2IDExLjc2OTE1MTksMTMwLjAzOTIzNyAxMy4wMjU4Nzc1LDEzNS4yOTIyNDIgQzEzLjI2NDMwMzMsMTM2LjEyMzA1OSAxMy40OTE0MjA2LDEzNi45NDc1NDYgMTMuNzA3MjI5MywxMzcuNzY1NzA0IFoiLz4KICAgIDx1c2UgZmlsbD0iIzAwMCIgZmlsbC1vcGFjaXR5PSIuMSIgeGxpbms6aHJlZj0iI3RyYW5zcGFyZW50LWEiLz4KICAgIDx1c2UgZmlsbD0iIzAwMCIgZmlsbC1vcGFjaXR5PSIuMSIgeGxpbms6aHJlZj0iI3RyYW5zcGFyZW50LWIiLz4KICA8L2c+Cjwvc3ZnPgo=">
+    
+    <h1>👋 Hey there!</h1>
+    <p>We're actively working on building Salte CI!</p>
+    <p>Checkout our work over on <a href="https://github.com/salte-ci">GitHub</a>.</p>
+
+    <h2 class="signup-tagline">Want to be notified when we go live?</h2>
+    <!-- Begin Mailchimp Signup Form -->
+    <form id="signup" action="https://salte.us15.list-manage.com/subscribe/post?u=d944205b1beaa75a7984d92e6&amp;id=f2e7b380fe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <input type="email" value="" placeholder="Email Address" name="EMAIL" class="required email" id="mce-EMAIL">
+      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="submit">
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d944205b1beaa75a7984d92e6_f2e7b380fe" tabindex="-1" value=""></div>
+      <div class="clear"></div>
+    </form>
+        
+      <!--End mc_embed_signup-->
+  </body>
+</html>
